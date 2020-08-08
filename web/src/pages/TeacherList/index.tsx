@@ -2,7 +2,8 @@ import React from "react";
 import PageHeader from "../../components/PageHeader";
 import TeacherItem from "../../components/TeacherItem";
 import "./styles.css";
-function TeacherList() {
+
+export default function TeacherList() {
     return (
         <div id="page-teacher-list" className="container">
             <PageHeader title="Estes são os proffys disponíveis">
@@ -21,7 +22,9 @@ function TeacherList() {
                     </div>
                 </form>
             </PageHeader>
+
             <main>
+                <TeacherItem />
                 <TeacherItem />
                 <TeacherItem />
                 <TeacherItem />
@@ -30,4 +33,3 @@ function TeacherList() {
         </div>
     );
 }
-export default TeacherList;
